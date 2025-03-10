@@ -35,5 +35,3 @@ console.log(countofpills);
 document.getElementById('count-of-tablets').innerText ="💊".repeat(countofpills);
 document.getElementById('btn_health_wishes').style.display = 'inline-block';
     })
-
-
