@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  background: #ffffff url("img/black-concrete-wall.jpg") no-repeat 50% 0;
+  background: #ffffff url("img/black-concrete-wall.jpg") repeat 50% 0;
 }
 
 h1 {
@@ -12,12 +12,11 @@ h1 {
   font-family: "Georgia", serif;
   font-size: 36px;
   line-height: 36px;
-  color:rgb(255, 131, 127)
 }
 
 h2 {
   padding-bottom: 12px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #cccccc;
 }
 
 .site-header {
@@ -27,14 +26,17 @@ h2 {
 .skills-item {
   margin-bottom: 15px;
   padding-left: 20px;
-  border-left: 10px solid #ff0000;
+  border-left: 10px solid #ffaef4;
   color: #ffffff;
 }
 
-/* Let's add a new empty rule here */
-
 .standard {
-  border-color: #ff3c00;
+  border-color: #ffaef4;
+  color: #ffffff;
+}
+
+.vip {
+  border-color: #ffaef4;
   color: #ffffff;
 }
 
@@ -64,12 +66,12 @@ h2 {
 
 .feature-kitten {
   padding-top: 60px;
-  background-image: url("img/mental-health\ \(1\).png");
+  background-image: url("img/mental-health.png");
 }
 
 .feature-cat {
   padding-top: 60px;
-  background-image: url("img/mental-health.png");
+  background-image: url("img/mental-health (1).png");
 }
 
 .feature-train {
@@ -85,44 +87,78 @@ h2 {
 .site-footer {
   display: flex;
   justify-content: space-between;
-  color: #999999;
+  color: #000000;
 }
-.wishes {
+
+/*Галерея */
+
+.gallery{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#main-image{
+  width: 300px;
+  height: 200px;
+}
+
+#main-image{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#left-arrow, #right-arrow{
+  background-color: rgb(255, 255, 255);
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease;
+  border-radius: 50%;
+}
+
+#left-arrow:hover, #right-arrow:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#left-arrow:active, #right-arrow:active {
+box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.6);
+}
+
+.wishes{
   margin-top: 30px;
   text-align: center;
 }
 
-#btn_health_wishes {
-  background: #ff5a26;
-  color: #ffc5b3;
-  border: 5px solid #ffc5b3;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: 36px;
+button{
+  background: #ffaef4;
+  color: rgb(0, 0, 0);
+  border: 5px solid;
+  border-radius: 100px;
+  height: 50px;
+  width: 500px;
   cursor: pointer;
 }
 
-#p-health-wishes {
-  font-size: 36px;
+#p-love-wishes {
+  font-size: 150px;
+  line-height: 28px;
   line-height: 40px;
-  color: #ff5a26;
-}
-/*Галерея*/
-.gallery{
-width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-}
-#main-image{
-width: 300px;
-height: 150px;
-}
-#left-arrow, #right-arrow{
-width: 32px;
-height: 32px;
-cursor: pointer;
-
+  color: #ffaef4;
+  text-align: justify;
 }
 
+
+
+
+/*Блок з купівлею та відбраженням */
+
+.site-footer p {
+  border:5px solid #000000;
+  padding: 10px 20px;
+  border-radius: 10px 8px;
+  background-color: #ffaef4;
+  cursor: pointer;
+}
