@@ -151,4 +151,4 @@ function getRandomInt(max) {
             <p>type</p>
             <span>id</span>
         `
-    });
+    })
