@@ -84,71 +84,76 @@ function getRandomInt(max) {
 }
 
       
-      const arrayOfObjects = [
-        {
-          id: 1,
-          title: "Аевіт",
-          photo: "",
-          description: "",
-          rating: 4,
-          type: ""
-        },
-        {
-          id: 2,
-          title: "Вітамін E",
-          photo: "",
-          description: "",
-          rating: 3,
-          type: ""
-        },
-        {
-          id: 3,
-          title: "Вітамін D",
-          photo: "",
-          description: "",
-          rating: 5,
-          type: ""
-        },
-        {
-          id: 4,
-          title: "Вітамін B3",
-          photo: "",
-          description: "",
-          rating: 5,
-          type: ""
-        },
-        {
-          id: 5,
-          title: "Омега-3",
-          photo: "",
-          description: "",
-          rating: 5,
-          type: ""
-        },
-        {
-          id: 6,
-          title: "Magnium-B6",
-          photo: "",
-          description: "",
-          rating: 3,
-          type: ""
-        },
-        
-      ];
-      
-      //console.log(arrayOfVitamins)
+const arrayOfVitamins = [
+  {
+    id:"001",
+    title:"Аевіт",
+    photo:"vitamin.png",
+    description:"Aevit is a vitamin supplement containing A (retinol) and E (tocopherol). It supports skin, vision, immunity, and has antioxidant properties. Used for vitamin deficiency, skin, and eye health. Contraindicated in hypervitaminosis, pregnancy, and liver or kidney issues. Take as prescribed.",
+    rating:2,
+    type:"Crystalline"
+  },
+  {
+    id:"002",
+    title:"Вітімін С",
+    photo:"vitamin-c.png",
+    description:"Vitamin C (ascorbic acid) is a powerful antioxidant that supports the immune system, skin health, and wound healing. It aids collagen production, enhances iron absorption, and protects cells from damage. Found in citrus fruits, berries, and vegetables. Deficiency can cause scurvy.",
+    rating:4,
+    type:"Water-soluble"
+  },
+  {
+    id:"003",
+    title:"Вітамін D",
+    photo:"vitamin-d.png",
+    description:"Vitamin D is essential for calcium absorption, bone health, and immune function. It helps prevent rickets and osteoporosis. The body produces it through sunlight exposure, and it is also found in fish, eggs, and fortified foods. Deficiency can lead to weak bones and immunity issues.",
+    rating:3,
+    type:"Crystalline"
+  },
+  {
+    id:"004",
+    title:"Вітамін B3",
+    photo:"vitamins-B3.png",
+    description:"Vitamin B3 (niacin) supports energy production, metabolism, and nervous system health. It helps lower cholesterol and improve skin function. Found in meat, fish, nuts, and whole grains. Deficiency can cause pellagra, leading to dermatitis, diarrhea, and dementia.",
+    rating:1,
+    type:"Water-soluble"
+  },
+  {
+    id:"005",
+    title:"Омега-3",
+    photo:"omega-3.png",
+    description:"Omega-3 fatty acids are essential fats that support heart, brain, and joint health. They reduce inflammation, improve cholesterol levels, and aid in cognitive function. Found in fatty fish, flaxseeds, and walnuts. Deficiency may lead to heart issues, fatigue, and dry skin.",
+    rating:4,
+    type:"Water-soluble"
+  },
+  {
+    id:"006",
+    title:"Magnesium",
+    photo:"magneum.png",
+    description:"Magnesium is a vital mineral that supports muscle and nerve function, heart health, and energy production. It helps regulate blood pressure, bone strength, and stress levels. Found in nuts, seeds, whole grains, and leafy greens. Deficiency may cause muscle cramps, fatigue, and anxiety.",
+    rating:5,
+    type:"Crystalline"
+  }
+]
 
-      arrayOfVitamins.forEach((item => {
-        let divVitamin = document.createElement('div')
-        divVitamin.classList.add('vitamin')
-        document.getElementById("p-vitamins").appendChild(divVitamin)
-        divVitamin.innerHTML = `
-            <h3>${item.title}</h3>
-            <hr>
-            <img src="img/vitamins/vitamin-a.png" alt="">
-            <p>${item.description}</p>
-            <span>${'❤'.repeat(item.rating) + '♡'.repeat(5 - item.rating)}</span>
-            <p>type</p>
-            <span>id</span>
-        `
-    })
+console.log(arrayOfVitamins)
+
+arrayOfVitamins.forEach((item,index) =>{
+  //console.log("елемент №",index.item)
+
+  let divVitamin = document.createElement('div')
+  //divVitamin.innerText = item.title 
+  
+  divVitamin.innerHTML = `
+          <p>${item.id}</p>
+          <h3>${item.title}</h3>
+          <hr>
+          <img src="img/vitamins/${item.photo}" alt="">
+          <p>${item.description}</p>
+          <p>${"💚". repeat(item.rating)+'🤍'.repeat(5-item.rating)}</p>
+          <p>${item.type}</p>
+          </div>
+          `
+  divVitamin.classList.add('vitamin')
+
+  document.getElementById("p-vitamins").appendChild(divVitamin)
+})
