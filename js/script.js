@@ -96,7 +96,7 @@ fetch("js/vitamins.json")
                 <p>${item.id}</p>
                 <h3>${item.title}</h3>
                 <hr>
-                <img src="img/vitamins/${item.photo}" alt="">
+                <img src="img/vitamins/${item.photo}" alt="Картинка для ${item.title}" onerror="this.onerror = null; this.src='img/vitamin-d.png';">
                 <p>${item.description}</p>
 
                 <div>

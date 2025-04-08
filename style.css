@@ -3,7 +3,7 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
+  color: #e9ffdf;
   background: #ffffff url("img/black-concrete-wall.jpg") repeat 50% 0;
 }
 
@@ -26,18 +26,18 @@ h2 {
 .skills-item {
   margin-bottom: 15px;
   padding-left: 20px;
-  border-left: 10px solid #ffaef4;
-  color: #ffffff;
+  border-left: 10px solid #78f7a9;
+  color: #c7ffd8;
 }
 
 .standard {
-  border-color: #ffaef4;
-  color: #ffffff;
+  border-color: #78f7a9;
+  color: #c7ffd8;
 }
 
 .vip {
-  border-color: #ffaef4;
-  color: #ffffff;
+  border-color: #78f7a9;
+  color: #c7ffd8;
 }
 
 .container {
@@ -133,9 +133,9 @@ box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.6);
 }
 
 button{
-  background: #ffaef4;
+  background: #87ff8d;
   color: rgb(0, 0, 0);
-  border: 5px solid;
+  border: 3px solid;
   border-radius: 100px;
   height: 50px;
   width: 500px;
@@ -146,7 +146,7 @@ button{
   font-size: 150px;
   line-height: 28px;
   line-height: 40px;
-  color: #ffaef4;
+  color: #69ff82;
   text-align: justify;
 }
 
@@ -156,17 +156,17 @@ button{
 /*Блок з купівлею та відбраженням */
 
 .site-footer p {
-  border:5px solid #000000;
+  border:5px solid #72ff96;
   padding: 10px 20px;
   border-radius: 10px 8px;
-  background-color: #ffaef4;
+  background-color: #68fa6f;
   cursor: pointer;
 }
 .site-footer p {
-  border:5px solid rgb(0, 0, 0)  ;
+  border:5px solid rgb(124, 255, 135)  ;
   padding: 10px 20px;
   border-radius: 10px 8px;
-  background-color: rgb(240, 141, 141);
+  background-color: rgb(144, 240, 141);
   cursor: pointer;
 }
 
@@ -189,6 +189,24 @@ button{
    width: 150px;
    min-height: 300px;
    text-align: center;
+}
+/*hover*/
+.vitamin:hover p:first-child{
+  color:#7eff6d;
+}
+
+/*all*/
+.vitamin p{
+  color:#ffffff;
+  text-align: justify;
+
+}
+
+/*id*/
+.vitamin p:first-child{
+  align-self: flex-end;
+  font-size: 10px;
+  color:#ffffff;
 }
 
 .vitamin h3{
